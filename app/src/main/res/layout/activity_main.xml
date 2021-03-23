@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on your registration number below"
+        android:textSize="25dp"
+        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        >
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="11811654"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_border"
+                android:id="@+id/reg1"
+                android:onClick="submit"
+                ></TextView>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="11811754"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:layout_margin="10dp"
+                android:id="@+id/reg2"
+                android:background="@drawable/btn_border"
+                android:layout_below="@id/reg1"
+                android:onClick="submit"
+                ></TextView>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="11809654"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/reg3"
+                android:background="@drawable/btn_border"
+                android:layout_below="@id/reg2"
+                android:onClick="submit"
+                ></TextView>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="11862074"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/reg4"
+                android:background="@drawable/btn_border"
+                android:layout_below="@id/reg3"
+                android:onClick="submit"
+                ></TextView>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="11892090"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/reg5"
+                android:background="@drawable/btn_border"
+                android:layout_below="@id/reg4"
+                android:onClick="submit"
+                ></TextView>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="11811800"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/reg6"
+                android:background="@drawable/btn_border"
+                android:layout_below="@id/reg5"
+                android:onClick="submit"
+                ></TextView>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="11809011"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/reg7"
+                android:background="@drawable/btn_border"
+                android:layout_below="@id/reg6"
+                android:onClick="submit"
+                ></TextView>
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="70dp"
+                android:text="11899123"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/reg8"
+                android:background="@drawable/btn_border"
+                android:layout_below="@id/reg7"
+                android:onClick="submit"
+                ></TextView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

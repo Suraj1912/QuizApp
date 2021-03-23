@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Questions">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:id="@+id/header"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/textheader"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:id="@+id/footer"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/textfooter"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wid_border"
+        android:padding="15dp"
+        android:layout_margin="20dp"
+        android:id="@+id/rel"
+        android:layout_below="@id/header"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/queNo"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/que"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/queNo"
+            >
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ans"
+        android:layout_below="@id/rel"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="20dp"
+            android:id="@+id/opt1"
+            android:checked="false"
+            >
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="20dp"
+            android:id="@+id/opt2"
+            android:checked="false"
+            >
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="20dp"
+            android:id="@+id/opt3"
+            android:checked="false"
+            >
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textSize="20dp"
+            android:id="@+id/opt4"
+            android:checked="false"
+            >
+
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_marginBottom="30dp"
+        android:text="next"
+        android:id="@+id/next"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_border"
+        >
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_marginBottom="30dp"
+        android:text="submit"
+        android:id="@+id/submit"
+        android:background="@drawable/btn_border"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        >
+
+    </Button>
+
+
+</RelativeLayout>
